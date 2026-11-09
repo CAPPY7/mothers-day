@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Mother's Day — [Mom's name]</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Floating hearts in hero (filled by JS) -->
+  <nav class="nav" id="nav">
+    <a href="#hero" class="nav-logo">♥ For Mom</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#letter">Letter</a></li>
+      <li><a href="#reasons">Reasons</a></li>
+      <li><a href="#gallery">Memories</a></li>
+      <li><a href="#timeline">Timeline</a></li>
+    </ul>
+  </nav>
+
+  <!-- 1. Hero -->
+  <header class="hero" id="hero">
+    <div class="hero-petals" id="heroPetals" aria-hidden="true"></div>
+    <div class="hero-content fade-in">
+      <p class="hero-eyebrow">A little something special</p>
+      <h1>Happy Mother's Day,<br /><span class="accent">[Mom's name]</span></h1>
+      <p class="hero-subtitle">You mean the world to me. This page is just a small way to say thank you.</p>
+      <a href="#letter" class="btn btn-primary">Read my letter ↓</a>
+    </div>
+  </header>
+
+  <!-- 2. A Letter for You -->
+  <section class="section letter-section" id="letter">
+    <div class="container">
+      <h2 class="section-title fade-in">A Letter for You</h2>
+      <div class="letter-card fade-in">
+        <div class="letter-seal">♥</div>
+        <p class="letter-greeting">Dear [Mom's name],</p>
+        <p class="letter-body">
+          [Write your message to Mom here]
+        </p>
+        <p class="letter-body">
+          [Add another paragraph if you want — tell her why she means so much to you]
+        </p>
+        <p class="letter-signoff">With love,<br /><strong>[Your name]</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Reasons I Love You -->
+  <section class="section reasons-section" id="reasons">
+    <div class="container">
+      <h2 class="section-title fade-in">Reasons I Love You</h2>
+      <p class="section-lead fade-in">Just a few of the many…</p>
+      <div class="reasons-grid">
+        <article class="reason-card fade-in">
+          <span class="reason-icon" aria-hidden="true">🌸</span>
+          <h3>Reason 1</h3>
+          <p>[Reason 1 — e.g. your kindness, your cooking, how you always listen…]</p>
+        </article>
+        <article class="reason-card fade-in">
+          <span class="reason-icon" aria-hidden="true">☕</span>
+          <h3>Reason 2</h3>
+          <p>[Reason 2]</p>
+        </article>
+        <article class="reason-card fade-in">
+          <span class="reason-icon" aria-hidden="true">🤗</span>
+          <h3>Reason 3</h3>
+          <p>[Reason 3]</p>
+        </article>
+        <article class="reason-card fade-in">
+          <span class="reason-icon" aria-hidden="true">🌟</span>
+          <h3>Reason 4</h3>
+          <p>[Reason 4]</p>
+        </article>
+        <article class="reason-card fade-in">
+          <span class="reason-icon" aria-hidden="true">💌</span>
+          <h3>Reason 5</h3>
+          <p>[Reason 5]</p>
+        </article>
+        <article class="reason-card fade-in">
+          <span class="reason-icon" aria-hidden="true">🏡</span>
+          <h3>Reason 6</h3>
+          <p>[Reason 6]</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Memories gallery -->
+  <section class="section gallery-section" id="gallery">
+    <div class="container">
+      <h2 class="section-title fade-in">Our Memories</h2>
+      <p class="section-lead fade-in">Click a photo to see it larger</p>
+      <div class="gallery-grid">
+        <figure class="gallery-item fade-in" data-full="images/photo1.jpg">
+          <img src="images/photo1.jpg" alt="[Photo caption 1]" loading="lazy" />
+          <figcaption>[Photo caption 1]</figcaption>
+        </figure>
+        <figure class="gallery-item fade-in" data-full="images/photo2.jpg">
+          <img src="images/photo2.jpg" alt="[Photo caption 2]" loading="lazy" />
+          <figcaption>[Photo caption 2]</figcaption>
+        </figure>
+        <figure class="gallery-item fade-in" data-full="images/photo3.jpg">
+          <img src="images/photo3.jpg" alt="[Photo caption 3]" loading="lazy" />
+          <figcaption>[Photo caption 3]</figcaption>
+        </figure>
+        <figure class="gallery-item fade-in" data-full="images/photo4.jpg">
+          <img src="images/photo4.jpg" alt="[Photo caption 4]" loading="lazy" />
+          <figcaption>[Photo caption 4]</figcaption>
+        </figure>
+        <figure class="gallery-item fade-in" data-full="images/photo5.jpg">
+          <img src="images/photo5.jpg" alt="[Photo caption 5]" loading="lazy" />
+          <figcaption>[Photo caption 5]</figcaption>
+        </figure>
+        <figure class="gallery-item fade-in" data-full="images/photo6.jpg">
+          <img src="images/photo6.jpg" alt="[Photo caption 6]" loading="lazy" />
+          <figcaption>[Photo caption 6]</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <img src="" alt="" id="lightboxImg" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <!-- 5. Memory timeline -->
+  <section class="section timeline-section" id="timeline">
+    <div class="container">
+      <h2 class="section-title fade-in">Favorite Memories</h2>
+      <div class="timeline">
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">[Year]</span>
+            <p>[A favorite memory — e.g. that trip we took together…]</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">[Year]</span>
+            <p>[A favorite memory]</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">[Year]</span>
+            <p>[A favorite memory]</p>
+          </div>
+        </div>
+        <div class="timeline-item fade-in">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-year">[Year]</span>
+            <p>[A favorite memory]</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Footer -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <p class="footer-text">Made with love by <strong>[Your name]</strong></p>
+      <button class="btn btn-hug" id="hugBtn" type="button">Send a hug 💕</button>
+    </div>
+    <div class="heart-burst" id="heartBurst" aria-hidden="true"></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
