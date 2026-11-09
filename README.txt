@@ -15,16 +15,10 @@ images/      — the 6 photo files used in the gallery
 README.txt   — this guide
 
 
-1. MOM'S NAME
--------------
-In index.html, find and replace every:
-  [Mom's name]
-with your mom's real name (or what you call her, like "Mom" or "Amma").
-
-Places it appears:
-  - The browser tab title (near the top of the file)
-  - The big headline in the hero section
-  - The letter greeting ("Dear [Mom's name],")
+1. MOM'S NAME — DONE
+--------------------
+Mom's name is set to Maya in the page title, hero headline, and letter greeting.
+No need to change this unless you want a different name.
 
 
 2. YOUR NAME
@@ -102,3 +96,5 @@ THAT'S IT!
 ----------
 Change only the [bracket] text and the photos. The rest of the site
 (colors, layout, animations) already works.
+
+Name is set to Maya (placeholder [Mom's name] replaced).
